@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FEFAE0;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #FFF;
+    padding: 15px 0;
+    border-bottom: 1px solid #D4A373;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D4A373;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    color: #D4A373;
+}
+
+/* Pricing Header */
+.pricing-header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #FFF;
+}
+
+.pricing-header h1 {
+    font-size: 36px;
+    color: #D4A373;
+    margin: 10px 0;
+}
+
+.pricing-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Pricing Cards */
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: #FFF;
+    border: 1px solid #D4A373;
+    border-radius: 8px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.price {
+    font-size: 28px;
+    color: #D4A373;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 14px;
+    color: #777;
+}
+
+.features,
+.cta {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #D4A373;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.features:hover,
+.cta:hover {
+    background-color: #A9845B;
+}
+
+ul {
+    list-style: none;
+    padding: 10px 0;
+    color: #333;
+}
+
+.basic {
+    background-color: #E8F8F5;
+}
+
+.standard {
+    background-color: #FFF9E5;
+}
+
+.professional {
+    border: 2px solid #4A90E2;
+}
+
+.enterprise {
+    background-color: #F2E8FF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
